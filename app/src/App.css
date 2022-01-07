@@ -13,9 +13,9 @@
 :root{
     --c1:#EEEEEE;
     --c2:#5E2CC9;
-    --c3:#0C2E55;
+    --c3:#006371;
     --c4:#3277EF;
-    --c5:#30388C;
+    --c5:#161a49;
     --c6:#2BB080;
     --c7:#EFEFEF;
     --c8:#000000;
@@ -27,7 +27,7 @@
 
 html{font-family: 'Roboto', sans-serif; scroll-behavior: smooth; overflow-x: hidden; }
 body{position: relative;}
-#container{width: 100%; min-height: 100vh; }
+#container{width: 100%; min-height: 100vh;}
 /* //////////////////////////////////////////////////////////////form style//////////////////////////////////// */
 input,select,textarea{height: 3.2rem; width: 100%; font-family: var(--f1); color: var(--c2); padding: 0 1rem; border-radius: .5rem;}
   
@@ -166,7 +166,7 @@ a {font-size: 1rem; font-weight:normal; display: block;}
 
 
 /* ///////////////////////////////////////////Drop Shadow/////////////////////////////////////// */
-.shadow1{box-shadow: 0 3px 3px rgba(0,0,0,.5);}
+.shadow1{box-shadow: 0px 0px 10px rgba(0,0,0,.5);}
 .shadow2{box-shadow: 0 3px 3px rgba(0,0,0,.2);}
 
 /* ///////////////////////////////////////////Radius Corner/////////////////////////////////////// */

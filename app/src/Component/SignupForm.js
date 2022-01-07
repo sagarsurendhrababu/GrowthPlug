@@ -37,7 +37,7 @@ function LoginForm() {
             <div className="col12 sm4 md8 flexCC c1b" id="container">
                 <div className="col4 sm4 md5 c6b pa2 br2 loginform shadow1">
                     <form className='col12 sm4 md8 flexDCC prl' onSubmit={formDataHandler} id='loginForm'>
-                        <h4 className='c7t mf pt'><i class="fas fa-lock"></i> User login Area</h4>                         
+                        <h4 className='c7t mf pt'><i class="fas fa-user"></i> Create New Account</h4>                         
                         <div className="col12 sm4 md8 mt">
                             <label htmlFor="" className='c7t mf col12'>User Name</label>
                             <input type="text" placeholder='User Name' className='bn' style={{borderColor: uservalidate? "#FF7070": "white"}}
@@ -48,10 +48,15 @@ function LoginForm() {
                             <input type="password" placeholder='Password' className='bn' style={{borderColor: passvalidate? "#FF7070": "white"}} 
                             onChange={userPass} value={passValue}/>                            
                         </div> 
+                        <div className="col12 sm4 md8 mt">
+                            <label htmlFor="" className='c7t mf col12'>Confirm Password</label>
+                            <input type="password" placeholder='Password' className='bn' style={{borderColor: passvalidate? "#FF7070": "white"}} 
+                            onChange={userPass} value={passValue}/>                            
+                        </div>                        
                         <div className="col12 sm4 md8 mt2 flexDCC">
-                            <button className='btn2 br bn col12 c3b c7t loginBtn'><h5 className='mf'>Login</h5></button>
+                            <button className='btn2 br bn col12 c3b c7t loginBtn'><h5 className='mf'>Sign-Up</h5></button>
                             <div className="col12 sm4 md8 flexCC">
-                                <h6 className='col12 sm4 md8 mt tac bf c5t'><i class="fas fa-user"></i><Link to="/signup">Create an Account</Link> </h6>
+                                <h6 className='col12 sm4 md8 mt tac bf c5t'><i class="fas fa-user"></i> <Link to="/">Already have Account</Link></h6>
                                 <h6 className='col12 sm4 md8 mt tac bf c5t'><i class="fas fa-unlock-alt"></i><Link to="/forgot">Forgot Password</Link></h6>
                             </div>
                         </div>
