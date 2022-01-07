@@ -1,0 +1,9 @@
+header{height: 10vh;}
+section{height: 80vh;}
+footer{height: 20vh;}
+
+.nav>li{cursor: pointer;}
+.nav>li>a{color: cornsilk;}
+.nav>li:hover{color: chartreuse;}
+
+.active{color: red!important;}
