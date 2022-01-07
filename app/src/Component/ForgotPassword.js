@@ -51,7 +51,7 @@ function LoginForm() {
                         <div className="col12 sm4 md8 mt2 flexDCC">
                             <button className='btn2 br bn col12 c3b c7t loginBtn'><h5 className='mf'>Set Password</h5></button>
                             <div className="col12 sm4 md8 flexCC">
-                                <h6 className='col12 sm4 md8 mt tac bf c5t'><Link to="/">Back to Login</Link></h6>                            
+                                <h6 className='col12 sm4 md8 mt tac bf c5t'><Link to="/" className='ml c5t'><i class="fas fa-arrow-circle-left"></i> Back to Login</Link></h6>                                                            
                             </div>                            
                         </div>
                     </form>

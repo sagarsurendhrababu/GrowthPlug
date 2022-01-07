@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
+
 function LoginForm() {
 
     const [userValue, setuserValue] = useState('');
@@ -17,6 +18,9 @@ function LoginForm() {
         if(passValue.trim().length===0){
             return setPassValidate(true);
         }
+        if(userValue && passValue){
+            window.location = "/dashboard";
+        }
         userValue = '';
         passValue = '';
     }
@@ -30,8 +34,6 @@ function LoginForm() {
         setpassValue(event.target.value);
         setPassValidate(false);
     }    
-
-
     return (
         <React.Fragment>
             <div className="col12 sm4 md8 flexCC c1b" id="container">
@@ -51,8 +53,8 @@ function LoginForm() {
                         <div className="col12 sm4 md8 mt2 flexDCC">
                             <button className='btn2 br bn col12 c3b c7t loginBtn'><h5 className='mf'>Login</h5></button>
                             <div className="col12 sm4 md8 flexCC">
-                                <h6 className='col12 sm4 md8 mt tac bf c5t'><i class="fas fa-user"></i><Link to="/signup">Create an Account</Link> </h6>
-                                <h6 className='col12 sm4 md8 mt tac bf c5t'><i class="fas fa-unlock-alt"></i><Link to="/forgot">Forgot Password</Link></h6>
+                                <h5 className='col12 sm4 md8 mt tac bf c5t flex'><i class="fas fa-user c5t"></i><Link to="/signup" className='ml c5t'>Create an Account</Link> </h5>
+                                <h5 className='col12 sm4 md8 mt tac bf c5t flex'><i class="fas fa-unlock-alt c5t"></i><Link to="/forgot" className='ml c5t'>Forgot Password</Link></h5>
                             </div>
                         </div>
                     </form>
@@ -61,5 +63,4 @@ function LoginForm() {
         </React.Fragment>
     )
 }
-
 export default LoginForm
