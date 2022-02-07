@@ -48,13 +48,14 @@ function LoginForm() {
                         <div className="col12 sm4 md8 mt">
                             <label htmlFor="" className='c7t mf col12'>Password</label>
                             <input type="password" placeholder='Password' className='bn' style={{borderColor: passvalidate? "#FF7070": "white"}} 
-                            onChange={userPass} value={passValue}/>                            
+                            onChange={userPass} value={passValue}/>
                         </div> 
                         <div className="col12 sm4 md8 mt2 flexDCC">
                             <button className='btn2 br bn col12 c3b c7t loginBtn'><h5 className='mf'>Login</h5></button>
                             <div className="col12 sm4 md8 flexCC">
                                 <h5 className='col12 sm4 md8 mt tac bf c5t flex'><i class="fas fa-user c5t"></i><Link to="/signup" className='ml c5t'>Create an Account</Link> </h5>
                                 <h5 className='col12 sm4 md8 mt tac bf c5t flex'><i class="fas fa-unlock-alt c5t"></i><Link to="/forgot" className='ml c5t'>Forgot Password</Link></h5>
+                                <h5 className='col12 sm4 md8 mt tac bf c5t flex'><i class="fas fa-unlock-alt c5t"></i><Link to="/form" className='ml c5t'>Form</Link></h5>
                             </div>
                         </div>
                     </form>

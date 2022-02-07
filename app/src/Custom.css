@@ -9,6 +9,12 @@
 .hindMark{position: relative;}
 .hindMark span{position: absolute; right: -1%; top: -15%; font-size: 1.5rem; color: yellow;}
 
+/* general style */
+.invalid{background-color: rgb(255, 188, 188); border: firebrick 2px solid;}
+.valid{background-color: rgb(213, 255, 188); border: rgb(68, 212, 87) 2px solid; outline: none;}
+.defaultValid{background-color: rgb(255, 255, 255); border: rgb(131, 131, 131) 2px solid; outline: none;}
+
+
 /* dashboard */
 .dashboardCanvas{min-height: 100vh;}
 .sideMenu{height:auto;}
